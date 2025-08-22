@@ -1,8 +1,0 @@
-{
-  "name": "patient-info-portal-backend",
-  "version": "1.0.0",
-  "description": "Backend functions for the patient portal",
-  "dependencies": {
-    "@google/genai": "^1.15.0"
-  }
-}
