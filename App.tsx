@@ -51,7 +51,9 @@ const App: React.FC = () => {
       setContent(topicInfo);
     } catch (err) {
       console.error(err);
-      setError('Failed to load information. Please try again later.');
+      // Update the error state with the actual message from the service
+      const errorMessage = err instanceof Error ? err.message : 'An unknown error occurred. Please try again later.';
+      setError(errorMessage);
     } finally {
       setIsLoading(false);
     }
